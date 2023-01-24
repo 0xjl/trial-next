@@ -2,13 +2,14 @@ import Image from 'next/image';
 
 const Featured = () => {
   return (
-    <div className="bg-transparent text-black">
+    <div className="bg-transparent text-[#214733]">
     <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl text-[#004b01] font-extrabold sm:text-4xl">Featured Products</h2> </div>
+        <h2 className="text-5xl text-[#214733] font-semibold">FEATURED PRODUCTS</h2> 
+        </div>
       <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
       <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff]  text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
@@ -22,11 +23,10 @@ const Featured = () => {
           </div> <div className="mt-2">
       <h2 className="text-xl text-center font-semibold tracking-wide">Acai Berry Extract</h2>
     </div>
-    
   </div>
         </div>
       <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
@@ -43,11 +43,12 @@ const Featured = () => {
   </div>
         </div>
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
               src={"/picture-14.jpg"}
+              alt='Picture of Acai Berry Extract'
               width="0"
               height="0"
               sizes="100vh"
@@ -59,7 +60,7 @@ const Featured = () => {
   </div>
         </div>
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
@@ -76,11 +77,12 @@ const Featured = () => {
   </div>
         </div>
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden "
               src={"/picture-15.jpg"}
+              alt='Picture of Black Berries'
               width="0"
               height="0"
               sizes="100vh"
@@ -93,11 +95,12 @@ const Featured = () => {
   </div>
         </div>
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
               src={"/picture-16.jpg"}
+              alt='Picture of Black Berries'
               width="0"
               height="0"
               sizes="100vh"
@@ -110,11 +113,12 @@ const Featured = () => {
         </div>
       
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden "
               src={"/picture-13.jpg"}
+              alt='Picture of Black Berries'
               width="0"
               height="0"
               sizes="100vh"
@@ -127,7 +131,7 @@ const Featured = () => {
   </div>
         </div>
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
@@ -144,29 +148,31 @@ const Featured = () => {
   </div>
         </div>  
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
               src={"/picture-12.jpg"}
+              alt='Picture of Black Berries'
               width="0"
               height="0"
               sizes="100vh"
               style={{ width: '100%', height: 'auto' }}
               />
           </div> <div className="mt-2">
-      <h2 className="text-xl text-center font-semibold tracking-wide">Inuline Powder</h2>
+      <h2 className="text-xl text-center font-semibold tracking-wide">Inulin Powder</h2>
     </div>
   </div>
         </div>
        
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
               src={"/picture-9.jpg"}
               width="0"
+              alt='Picture of Black Berries'
               height="0"
               sizes="100vh"
               style={{ width: '100%', height: 'auto' }}
@@ -177,7 +183,7 @@ const Featured = () => {
   </div>
         </div> 
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
@@ -194,11 +200,11 @@ const Featured = () => {
   </div>
         </div>
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
-              alt='Picture of Fenugreek Seeds'
+              alt='Picture of Senna Leaf Extract Powder'
               src={"/picture-7.jpg"}
               width="0"
               height="0"
@@ -206,13 +212,12 @@ const Featured = () => {
               style={{ width: '100%', height: 'auto' }}
               />
           </div>  <div className="mt-2">
-      <h2 className="text-xl text-center font-semibold tracking-wide">Fenugreek Seed Extract</h2>
+      <h2 className="text-xl text-center font-semibold tracking-wide">Senna Leaf Extract</h2>
     </div>
   </div>
         </div>
-       
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
@@ -224,12 +229,12 @@ const Featured = () => {
               style={{ width: '100%', height: 'auto' }}
               />
           </div> <div className="mt-2">
-      <h2 className="text-xl text-center font-semibold tracking-wide">Fennel Seed Extract</h2>
+      <h2 className="text-xl text-center font-semibold tracking-wide">Mangosteen Extract</h2>
     </div>
   </div>
         </div>
       <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
           <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
@@ -248,7 +253,7 @@ const Featured = () => {
         </div>
       
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"
@@ -268,7 +273,7 @@ const Featured = () => {
      
       
         <div className="flex">
-        <div className="mx-auto max-h-80 max-w-xs p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
+        <div className="mx-auto max-h-80 min-w-[250px] p-4 rounded-3xl shadow-md bg-gradient-to-r from-[#cccce6] to-[#f3f3ff] text-black">
         <div className='rounded-3xl overflow-hidden'>  
               <Image 
               className="rounded-3xl h-auto w-full hover:scale-110 ease-in duration-300 overflow-hidden"

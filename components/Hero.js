@@ -10,18 +10,21 @@ const Hero = () => {
 
 return(
     <Swiper
+          style={{"--swiper-pagination-color": "white",
+          "--swiper-pagination-bullet-inactive-color": "white",}}
           spaceBetween={30}
           effect={"fade"}
           navigation={true}
           autoplay={{
-              delay: 2500,
+              delay: 3500,
               disableOnInteraction: false,
             }}
           pagination={{
             clickable: true,
           }}
           modules={[Autoplay,EffectFade, Navigation, Pagination]}
-          className="mySwiper">
+          className="mySwiper"
+          id="my-swiper">
 
         <SwiperSlide>
         <Image 
@@ -30,11 +33,12 @@ return(
            sizes="100vh"
            style={{ width: '100%', height: '100vh' }}
            src={'/slide-1.jpg'}
+           alt='Picture of Black Berries'
         />
 
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
             <div className="text-white ml-[0rem] mt-[30rem]">
-                <h2 className="md:text-5xl">We import health extracts for the ones you love</h2>
+                <h2 className="md:text-5xl">We import health extracts for the ones dear to you</h2>
                                 <Link href="#about">
               
                 </Link> 
@@ -48,10 +52,11 @@ return(
            sizes="100vh"
            style={{ width: '100%', height: '100vh' }}
            src={'/slide-2.jpg'}
+           alt='Picture of Black Berries'
         />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
             <div className="text-white ml-[0rem] mt-[30rem]">
-                <h2 className="md:text-5xl">We treat our clients like family</h2>
+                <h2 className="md:text-5xl">We treat our clients like one big family</h2>
                               
             </div>
           </div>
@@ -63,6 +68,7 @@ return(
            sizes="100vh"
            style={{ width: '100%', height: '100vh' }}
            src={'/slide-3.jpg'}
+           alt='Picture of Black Berries'
         />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
             <div className="text-white ml-[0rem] mt-[30rem]">
@@ -77,6 +83,7 @@ return(
            sizes="100vh"
            style={{ width: '100%', height: '100vh' }}
            src={'/slide-4.jpg'}
+           alt='Picture of Black Berries'
         />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
             <div className="text-white ml-[0rem] mt-[30rem]">
@@ -92,40 +99,11 @@ return(
            sizes="100vh"
            style={{ width: '100%', height: '100vh' }}
            src={'/slide-2.jpg'}
+           alt='Picture of Black Berries'
         />
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
             <div className="text-white ml-[0rem] mt-[30rem]">
                 <h2 className="md:text-5xl">40 years of experience in the food and beverage industry</h2>
-                              
-            </div>
-          </div>
-          </SwiperSlide>
-        <SwiperSlide>
-        <Image 
-           width="0"
-           height="0"
-           sizes="100vh"
-           style={{ width: '100%', height: '100vh' }}
-           src={'/slide-1.jpg'}
-        />
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-            <div className="text-white ml-[0rem] mt-[30rem]">
-                <h2 className="md:text-5xl">We want to give Seniors the life they deserve</h2>
-                              
-            </div>
-          </div>
-          </SwiperSlide>
-        <SwiperSlide>
-        <Image 
-           width="0"
-           height="0"
-           sizes="100vh"
-           style={{ width: '100%', height: '100vh' }}
-           src={'/slide-3.jpg'}
-        />
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-            <div className="text-white ml-[0rem] mt-[30rem]">
-                <h2 className="md:text-5xl">We treat our clients like family</h2>
                               
             </div>
           </div>

@@ -4,47 +4,43 @@ import { useState } from 'react';
 const Products = ({ products }) => {
   const [searchTerm, setSearch] = useState('')
   return (
-    <div className='flex flex-col text-center'>
-      <h1 className='text-5xl md:text-6xl font-extrabold leading-tighter mb-4'>
-        <span className='animate-text bg-clip-text text-transparent bg-gradient-to-r from-emerald-700 to-teal-200 py-2'>
-        Products
-        </span>
-      </h1>
-    <div>  
+    <div className="container flex flex-col text-center box-border ">
+      <div className='flex flex-row justify-between items-center'>
       <input
-      className='shadow appearance-none border rounded max-w-2/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+      className='max-w-[300px] shadow appearance-none p-1 mt-[-10px] mb-[2em] border border-solid border-gray-300 rounded transition ease-in-out focus:text-gray-700 focus:bg-white focus:border-green-700 focus:outline-none'
       type="text"
-      placeholder="Search our products here"
+      placeholder="Search"
       onChange={(e) => {
         setSearch(e.target.value);
       }}
       />
-    </div>
-   <div> 
-    <ul className="list-none space-y-4 text-4xl font-bold mb-3">
+      </div>
+    <div>
+    <ul className="grid mx-auto lg:grid-cols-1 xl:grid-cols-4">
         {products &&
           products.data.filter((val) => {
             if (searchTerm === '') {
               return val;
             } else if (
-              val.attributes.NAME.toLowerCase().includes(searchTerm.toLowerCase())
+              val.attributes.NAME.toLowerCase().includes(searchTerm.toLowerCase()) || val.attributes.ingredient1.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
               return val;
             }
             return false;
           }).map((product) => {
             return (
-              <li key={product.id} className="text-center py-1 border-b border-gray-100 truncate fill">
-                <Link className='cursor-pointer text-gray-500 text-sm hover:text-gray-700' href={`product/` + product.attributes.slug}>
-                 {product.attributes.NAME}
-                 </Link>
+              <li key={product.id} className="border-gray-400 m-[2px]">
+                <Link className='text-xl font-bold' href={`product/` + product.attributes.slug}>
+                  <div className="flex justify-center items-center select-none cursor-pointer bg-gradient-to-r from-[#cce6d0c0] to-[#f3fff4b8] text-[#002401] hover:text-[#3b904a] rounded-md p-3 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl">
+                    {product.attributes.NAME}
+                  </div>
+                </Link>
               </li>
-            );
+            )
           })}
       </ul>
       </div>
       </div>
- 
   );
 };
 

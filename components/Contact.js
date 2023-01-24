@@ -2,22 +2,22 @@ import React from 'react'
 
 const Contact = () => {
   return (
-      <section className="text-gray-700 body-font relative">
+      <section className="text-gray-700 body-font relative" id='contact'>
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+            <h1 className="font-bold mb-4 text-5xl text-[#214733]">
               Contact Us
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Send me a message bro.
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-[#002401]">
+              For any inquiries please send us a message!
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <form>
-            <div className="flex flex-wrap -m-2">
+            <div className="flex flex-wrap -m-2 text-[#002401]">
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <label htmlFor="name" className="leading-7 text-sm text-gray-600">
+                  <label htmlFor="name" className="leading-7 text-sm">
                     Name
                   </label>
                   <input
@@ -32,7 +32,7 @@ const Contact = () => {
                 <div className="relative">
                   <label
                     htmlFor="email"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm"
                   >
                     Email
                   </label>
@@ -48,7 +48,7 @@ const Contact = () => {
                 <div className="relative">
                   <label
                     htmlFor="message"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm"
                   >
                     Message
                   </label>
@@ -60,17 +60,28 @@ const Contact = () => {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto px-8 py-3 text-lg font-semibold rounded bg-[#002401] hover:bg-[#004b01] text-gray-50">
+                <button className="duration-300 ease-in flex mx-auto px-8 py-3 text-lg font-semibold rounded bg-[#002401] hover:bg-[#004b01] text-gray-50">
                   Submit
                 </button>
               </div>
-              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-indigo-500">risingtigerenterprises@gmail.com</a>
+              <div className="flex flex-col items-center p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <p className="font-semibold">
+                <span className='text-black font-extrabold'>Email</span>
+                <br/>
+                  risingtigerenterprises@email.com
+                </p>
+                <p className="leading-normal my-5 font-semibold">
+                <span className='font-extrabold'>Address</span>
+                  <br />
+                  32 Circle Dr. Cubic Homes
+                  <br />
+                  Brgy. Merville, Paranaque, 1709.
+                  <br />
+                </p>
                 <p className="leading-normal my-5">
-                  Philippines
+                <span className='font-extrabold'>Contact Number</span>
                   <br />
-                  Cubic Bro
-                  <br />
+                  TBA
                 </p>
               </div>
             </div>

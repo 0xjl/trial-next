@@ -14,7 +14,7 @@ export default ProductList;
 
 export async function getStaticProps(){
 const productResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/products`
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/products/`
     );
     return {
     props: {
