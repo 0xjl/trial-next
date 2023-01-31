@@ -6,7 +6,7 @@ import { fetcher } from '../../lib/api';
 const Product = ({product}) => {
 return(
     <Layout>
-        <div className='bg-gray-200 mx-auto xs:w-1/2 lg:w-3/4 rounded-lg my-16 p-8'>
+        <div className='bg-gray-200 mx-auto xs:w-1/2 lg:w-1/2 rounded-lg my-16 p-8'>
         <li className='p-4 list-none relative'>
             <Link className='absolute top-0 right-0' href="/products"> 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 sm:mt-2">
@@ -14,30 +14,23 @@ return(
                 </svg>
             </Link>
         </li>
-        <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter mb-4">
-          <span className="animate-text bg-clip-text text-transparent bg-gradient-to-r from-[#bddebd] to-teal-400 py-2">
+        <h1 className="text-4xl font-medium text-center">
             {product.attributes.NAME}
-          </span>
         </h1>
-    
-        <div>
-            <h4 className="font-bold">Appearance:</h4>
-            <p>{product.attributes.appearance}</p>
+        <p className='text-base text-center italic'>{product.attributes.scientificName}</p>
+        <div className='text-center'>
+            <h4 className="font-medium p-2">Primary Function:</h4>
+            <p className='text-lg'>{product.attributes.color}</p>
         </div>
-
-        <br />
-
-        <div>
-            <h4 className="font-bold">Color Range:</h4>
-            <p>{product.attributes.color}</p>
+        <div className='text-center'>
+            <h4 className="font-medium p-2">Benefits:</h4>
+            <p className='text-lg'>{product.attributes.benefits}</p>
         </div>
-      
-        <br />
-
-        <div>
-            <h4 className="font-bold">Specifications:</h4>
-            <p>{product.attributes.ingredient1}</p>
-            <p>{product.attributes.ingredient2}</p>
+        <div className='text-center'>
+            <h4 className="font-medium p-2">Specifications:</h4>
+            <p className='text-lg'>{product.attributes.ingredient1}</p>
+            <p className='text-lg'>{product.attributes.ingredient2}</p>
+            <p className='text-lg'>{product.attributes.appearance}</p>
         </div>
 
         <br />

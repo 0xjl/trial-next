@@ -2,17 +2,17 @@ import React from 'react'
 
 const Contact = () => {
   return (
-      <section className="text-gray-700 body-font relative" id='contact'>
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="font-bold mb-4 text-5xl text-[#214733]">
-              Contact Us
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-[#002401]">
-              For any inquiries please send us a message!
-            </p>
-          </div>
-          <div className="lg:w-1/2 md:w-2/3 mx-auto">
+    <section className="text-gray-700 body-font relative" id='contact'>
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-12">
+          <h1 className="font-bold mb-4 text-5xl text-[#214733]">
+            Contact Us
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-[#002401]">
+            For any inquiries please send us a message!
+          </p>
+        </div>
+        <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <form>
             <div className="flex flex-wrap -m-2 text-[#002401]">
               <div className="p-2 w-1/2">
@@ -66,12 +66,12 @@ const Contact = () => {
               </div>
               <div className="flex flex-col items-center p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                 <p className="font-semibold">
-                <span className='text-black font-extrabold'>Email</span>
-                <br/>
+                  <span className='text-black font-extrabold'>Email</span>
+                  <br />
                   risingtigerenterprises@email.com
                 </p>
                 <p className="leading-normal my-5 font-semibold">
-                <span className='font-extrabold'>Address</span>
+                  <span className='font-extrabold'>Address</span>
                   <br />
                   32 Circle Dr. Cubic Homes
                   <br />
@@ -79,16 +79,16 @@ const Contact = () => {
                   <br />
                 </p>
                 <p className="leading-normal my-5">
-                <span className='font-extrabold'>Contact Number</span>
+                  <span className='font-extrabold'>Contact Number</span>
                   <br />
                   TBA
                 </p>
               </div>
             </div>
           </form>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
   )
 }
 

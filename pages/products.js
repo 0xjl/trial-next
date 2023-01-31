@@ -1,12 +1,12 @@
 import Products from '../components/Products'
-import Layout from '../components/Layout';
 import { fetcher } from '../lib/api';
+import Layout from '../components/Layout'
 
 const ProductList = ({ products }) => {
     return(
-    <Layout>
-          <Products products={products} />
-    </Layout>
+        <Layout>
+              <Products products={products} />
+        </Layout>
 )
 }
 
@@ -18,7 +18,7 @@ const productResponse = await fetcher(
     );
     return {
     props: {
-        products: productResponse
-    }
+        products: productResponse,
+    },
 }
 }
