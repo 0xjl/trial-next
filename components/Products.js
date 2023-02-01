@@ -12,7 +12,7 @@ const Products = ({ products }) => {
         </h1>
         <div className='flex'>
           <input
-            className='p-0 max-w-[200px] text-base'
+            className='p-0 max-w-[175px] text-base'
             type="text"
             placeholder="Search Product"
             onChange={(e) => {
@@ -21,7 +21,7 @@ const Products = ({ products }) => {
           />
         </div>
         <div className=''>
-          <ul className="mx-auto mt-2">
+          <ul className="mx-auto mt-2 xs:columns-1 md:columns-2 xl:columns-3 gap-0">
             {products &&
               products.data
                 .sort((a, b) => {
@@ -42,7 +42,8 @@ const Products = ({ products }) => {
                     return val;
                   }
                   return false;
-                }).map((product) => {
+                })
+                .map((product) => {
                   return (
                       <li key={product.id}>
                         <Link className='text-base' href={`product/` + product.attributes.slug}>

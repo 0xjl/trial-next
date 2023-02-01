@@ -6,7 +6,6 @@ import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import Image from 'next/image';
 
 const Hero = ({hero}) => {
-  console.log(hero.data[0].attributes.image.data.attributes.url);
   return (
     <Swiper
       style={{
@@ -16,10 +15,10 @@ const Hero = ({hero}) => {
       spaceBetween={30}
       effect={"fade"}
       navigation={true}
-      autoplay={{
+      /* autoplay={{
         delay: 3500,
         disableOnInteraction: false,
-      }}
+      }} */
       pagination={{
         clickable: true,
       }}
@@ -37,8 +36,8 @@ const Hero = ({hero}) => {
           alt='Image of two people sitting under a tree watching the sun set' 
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-          <div className="text-white ml-[0rem] mt-[20rem] md:mt-[30rem]">
-            <h2 className="text-4xl md:text-5xl">{hero.data[0].attributes.header}</h2>
+          <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
+            <h2 className="text-xl md:text-5xl">{hero.data[0].attributes.header}</h2>
           </div>
         </div>
       </SwiperSlide>
@@ -52,8 +51,8 @@ const Hero = ({hero}) => {
           alt='Image of a large family jumping together at the beach while the sun sets behind them' 
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-          <div className="text-white ml-[0rem] mt-[20rem] md:mt-[30rem]">
-            <h2 className="text-4xl md:text-5xl">{hero.data[1].attributes.header}</h2>
+          <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
+            <h2 className="text-xl md:text-5xl">{hero.data[1].attributes.header}</h2>
 
           </div>
         </div>
@@ -68,8 +67,8 @@ const Hero = ({hero}) => {
           alt='Picture of Black Berries'
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-          <div className="text-white ml-[0rem] mt-[20rem] md:mt-[30rem]">
-            <h2 className="text-4xl md:text-5xl">{hero.data[2].attributes.header}</h2>
+          <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
+            <h2 className="text-xl md:text-5xl">{hero.data[2].attributes.header}</h2>
           </div>
         </div>
       </SwiperSlide>
@@ -83,8 +82,8 @@ const Hero = ({hero}) => {
           alt='Picture of Black Berries'
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-          <div className="text-white ml-[0rem] mt-[20rem] md:mt-[30rem]">
-            <h2 className="text-4xl md:text-5xl">{hero.data[3].attributes.header}</h2>
+          <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
+            <h2 className="text-xl md:text-5xl">{hero.data[3].attributes.header}</h2>
 
           </div>
         </div>
@@ -99,8 +98,8 @@ const Hero = ({hero}) => {
           alt='Picture of Black Berries'
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-          <div className="text-white ml-[0rem] mt-[20rem] md:mt-[30rem]">
-            <h2 className="text-4xl md:text-5xl">{hero.data[1].attributes.header}</h2>
+          <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
+            <h2 className="text-xl md:text-5xl">{hero.data[1].attributes.header}</h2>
           </div>
         </div>
       </SwiperSlide>

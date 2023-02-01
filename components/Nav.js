@@ -59,7 +59,7 @@ const Nav = () => {
         <nav style={{ backgroundColor: `${color}` }} className="fixed left-0 top-0 w-full z-10 ease-in-out duration-500">
             <div className='max-w-[1440px] mx-auto flex justify-between items-center p-4 text-white ease-in-out duration-500'>
                 <Link href="/" passHref>
-                    <h1 style={{ color: `${textColor}` }} className='text-4xl ease-in-out duration-500'>Rising Tiger Enterprises</h1>
+                    <h1 style={{ color: `${textColor}` }} className='text-xl lg:text-4xl ease-in-out duration-500'>Rising Tiger Enterprises</h1>
                 </Link>
                 <ul style={{ color: `${textColor}` }} className='hidden sm:flex transition-all ease-in-out duration-500'>
                     <li className='p-4 hover:text-green-600 transition-all ease-in-out duration-500'>

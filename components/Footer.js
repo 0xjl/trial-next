@@ -18,7 +18,7 @@ const Footer = () => {
 					<button onClick={scrollToTop} className=''>Back To Top</button>
 				</div>
 			</div>
-			<div className="py-6 text-sm text-center text-gray-400">Design and developed by 0xjdl</div>
+			<div className="py-6 text-sm text-center text-gray-400">Designed & Developed by 0xjdl</div>
 		</footer>
 	)
 }
