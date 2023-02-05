@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Hero = ({hero}) => {
   return (
-    <Swiper
+    <Swiper 
       style={{
         "--swiper-pagination-color": "white",
         "--swiper-pagination-bullet-inactive-color": "white",
@@ -15,10 +15,10 @@ const Hero = ({hero}) => {
       spaceBetween={30}
       effect={"fade"}
       navigation={true}
-      /* autoplay={{
+      autoplay={{
         delay: 3500,
         disableOnInteraction: false,
-      }} */
+      }}
       pagination={{
         clickable: true,
       }}
@@ -53,7 +53,6 @@ const Hero = ({hero}) => {
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
           <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
             <h2 className="text-xl md:text-5xl">{hero.data[1].attributes.header}</h2>
-
           </div>
         </div>
       </SwiperSlide>

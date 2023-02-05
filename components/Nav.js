@@ -134,7 +134,6 @@ const Nav = () => {
                                 Contact
                             </Link>
                         </li>
-
                     </ul>
                 </div>
             </div>
