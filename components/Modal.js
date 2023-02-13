@@ -6,8 +6,8 @@ const Modal = () => {
     <>
       <div className="flex justify-center">
         <button
-          className="bg-gradient-to-r from-blue-500 to-teal-400 animate-text text-white active:bg-blue-500 
-      font-bold px-4 py-1 rounded shadow duration-300 ease-in hover:-translate-y-1 hover:shadow-xl outline-none focus:outline-none mr-1 mb-1"
+          className="bg-gradient-to-r from-[#74a57e] to-[#c1d9c6] animate-text text-white active:bg-blue-500 
+      font-semibold px-4 py-1 text-xl rounded shadow duration-300 ease-in hover:-translate-y-1 hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
           type="button"
           onClick={() => setShowModal(true)}
         >
@@ -31,16 +31,16 @@ const Modal = () => {
                 </div>
                 <div className="relative p-6 flex-auto transition-all ease-in duration-300">
                   <form className="rounded px-8 pt-6 pb-8 w-full">
-                    <h2 className="text-white font-bold my-4 ">Inquiry Details</h2>
-                    <label className="block text-white font-bold text-lg mb-2">
+                    <h2 className="text-[#214733] font-bold my-4 ">Inquiry Details</h2>
+                    <label className="block text-[#214733] font-bold text-lg mb-2">
                       Name
                     </label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-1 text-black transition-all" />
-                    <label className="block text-white font-bold text-lg mb-2">
+                    <label className="block text-[#214733] font-bold text-lg mb-2">
                       Email
                     </label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-1 text-black" />
-                    <label className="block text-white font-bold text-lg mb-2">
+                    <label className="block text-[#214733] font-bold text-lg mb-2">
                       Message
                     </label>
                     <textarea className="shadow appearance-none border rounded w-full py-2 px-1 text-black" />
@@ -48,8 +48,8 @@ const Modal = () => {
                 </div>
                 <div className="flex items-center justify-center p-6 border-solid border-blueGray-200 rounded-b">
                   <button
-                    className="bg-gradient-to-r from-[#bddebd] to-teal-400 animate-text text-white active:bg-blue-500 
-                    font-bold px-4 py-1 rounded shadow hover:shadow-2xl outline-none focus:outline-none mr-1 mb-1 duration-300 ease-in hover:-translate-y-1"
+                    className="bg-gradient-to-r from-[#74a57e] to-[#c1d9c6] animate-text text-white text-[1.3rem]
+                    font-semibold px-4 py-1 rounded shadow hover:shadow-2xl outline-none focus:outline-none mr-1 mb-1 duration-300 ease-in hover:-translate-y-1"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >

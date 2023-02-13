@@ -12,10 +12,10 @@ const About = ({ component }) => {
       <div className='pt-[2%] text-[#214733]' data-aos="fade-up"
         data-aos-delay="300"
         data-aos-anchor-placement="bottom-bottom">
-        <h1 className='m-4 text-5xl font-bold pt-5'>{component.data[0].attributes.header}</h1>
-        <h2 className='p-5 mt-10 text-xl md:text-2xl font-semibold'>{component.data[0].attributes.description}</h2>
-        <h2 className=' text-xl md:text-2xl font-semibold'>Primary line of business is Importer-Distributor of NUTRITION & HEALTH,
-          ingredients such as Botanical Extracts & Powders. </h2>
+        <h1 className='m-4 text-5xl font-[900] pt-5'>{component.data[0].attributes.header}</h1>
+        <h2 className='mt-10 text-xl md:text-2xl font-medium'>{component.data[0].attributes.description}</h2>
+        <h2 className='text-xl md:text-2xl font-medium'>Primary line of business is Importer-Distributor of NUTRITION & HEALTH,
+          ingredients such as Botanical Extracts & Powders.</h2>
       </div>
         <div className="container mx-auto lg:space-y-12 pt-[1em] lg:pt-[4em]">
           <div className="flex flex-col overflow-hidden rounded-md lg:flex-row">
@@ -35,7 +35,9 @@ const About = ({ component }) => {
             </div>
             <div className="flex flex-col justify-center flex-1 p-6 mt-2" data-aos="fade-left" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
               <h3 className="text-4xl font-bold text-[#214733]">{component.data[1].attributes.header}</h3>
-              <p className="md:text-xl lg:text-2xl my-2 lg:my-6 lg:mx-20 font-semibold text-[#214733]">{component.data[1].attributes.uniqueinput} <br /> <span className='font-bold'>{component.data[1].attributes.description}</span> {component.data[1].attributes.uniqueinput2}
+              <p className="md:text-xl lg:text-2xl my-2 lg:my-6 lg:mx-20 font-medium text-[#214733]">{component.data[1].attributes.uniqueinput} 
+              <br /> 
+              <span className='font-[600] text-[#214733]'>{component.data[1].attributes.description}</span> {component.data[1].attributes.uniqueinput2}
               </p>
             </div>
           </div>
@@ -58,7 +60,7 @@ const About = ({ component }) => {
             <div className="flex flex-col justify-center flex-1 p-6 mt-2" data-aos="fade-right"
               data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
               <h3 className="text-4xl font-bold text-[#214733]">{component.data[2].attributes.header}</h3>
-              <p className="md:text-xl lg:text-2xl my-2 lg:my-6 lg:mx-20 font-semibold text-[#214733]">{component.data[2].attributes.description}
+              <p className="md:text-xl lg:text-2xl my-2 lg:my-6 lg:mx-20 font-medium text-[#214733]">{component.data[2].attributes.description}
               </p>
             </div>
           </div>
@@ -82,7 +84,7 @@ const About = ({ component }) => {
             <div className="flex flex-col justify-center flex-1 p-6 mt-2" data-aos="fade-left"
               data-aos-delay="300" data-aos-anchor-placement="bottom-bottom">
               <h3 className="text-4xl font-bold text-[#214733]">{component.data[3].attributes.header}</h3>
-              <p className="md:text-xl lg:text-2xl my-2 lg:my-6 lg:mx-20 font-semibold text-[#214733]">{component.data[3].attributes.description}</p>
+              <p className="md:text-xl lg:text-2xl my-2 lg:my-6 lg:mx-20 font-medium text-[#214733]">{component.data[3].attributes.description}</p>
             </div>
           </div>
         </div>

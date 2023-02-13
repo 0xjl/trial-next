@@ -21,8 +21,8 @@ const Products = ({ products }) => {
                 setSearch(e.target.value);
               }}
             />
-            <div class="absolute top-3 left-1">
-              <AiOutlineSearch className='h-[15px]' fill='#002401' />
+            <div className="absolute top-2 left-1">
+              <AiOutlineSearch className='h-[20px]' fill='#002401' />
             </div>
           </div>
         </div>
