@@ -65,23 +65,22 @@ const Contact = () => {
                 </button>
               </div>
               <div className="flex flex-col items-center p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <p className="font-semibold">
-                  <span className='text-black font-extrabold'>Email</span>
+                <p className="">
+                  <span className='text-black font-semibold'>Email</span>
                   <br />
-                  risingtigerenterprises@email.com
+                 <a href="mailto:info.risingtiger@gmail.com">info.risingtiger@gmail.com</a> 
                 </p>
-                <p className="leading-normal my-5 font-semibold">
-                  <span className='font-extrabold'>Address</span>
+                <p className="leading-normal mt-4">
+                  <span className='text-black font-semibold'>Address</span>
                   <br />
                   32 Circle Dr. Cubic Homes
                   <br />
                   Brgy. Merville, Paranaque, 1709.
-                  <br />
                 </p>
                 <p className="leading-normal my-5">
                   <span className='font-extrabold'>Contact Number</span>
                   <br />
-                  TBA
+                  <span></span> (+632) 8822 0355 
                 </p>
               </div>
             </div>

@@ -15,12 +15,12 @@ return(
         <Head>
             <title>RTE</title>
         </Head>
-        <nav className="w-full z-2 bg-[#002401] text-[#bddebd]">
+        <nav className="font-[300] w-full z-2 bg-[#002401] text-[#bddebd]">
             <div className='max-w-[1440px] mx-auto flex justify-between items-center p-4 ease-in-out duration-500'>
                 <Link href="/" passHref>
                     <h1 className='text-xl lg:text-4xl leading-tighter text-center md:text-left'>
                         <span>
-                            Rising Tiger Enterprises
+                            Rising Tiger Enterprises Inc.
                         </span>
                     </h1>
                 </Link>

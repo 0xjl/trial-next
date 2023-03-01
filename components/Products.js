@@ -8,7 +8,7 @@ const Products = ({ products }) => {
   return (
     <>
       <div className="container mx-auto flex flex-col text-center z-5">
-        <h1 className='text-5xl font-bold mb-5 text-[#002401]'>
+        <h1 className='text-5xl font-medium mb-5 text-[#002401] '>
           Products
         </h1>
         <div className='flex'>
@@ -27,7 +27,7 @@ const Products = ({ products }) => {
           </div>
         </div>
         <div className="z-0">
-          <ul className="mx-auto mt-2 xs:columns-1 md:columns-2 xl:columns-3 gap-0 z-1">
+          <ul className="mx-auto mt-2 xs:columns-1 md:columns-2 xl:columns-4 gap-0 z-1">
             {products &&
               products.data
                 .sort((a, b) => {
@@ -43,7 +43,7 @@ const Products = ({ products }) => {
                   if (searchTerm === '') {
                     return val;
                   } else if (
-                    val.attributes.NAME.toLowerCase().includes(searchTerm.toLowerCase()) || val.attributes.ingredient1.toLowerCase().includes(searchTerm.toLowerCase())
+                    val.attributes.NAME.toLowerCase().includes(searchTerm.toLowerCase()) || val.attributes.specification1.toLowerCase().includes(searchTerm.toLowerCase())
                   ) {
                     return val;
                   }
@@ -54,7 +54,7 @@ const Products = ({ products }) => {
                     <li key={product.id}>
                       <Link className='text-base' href={`product/` + product.attributes.slug}>
                         <div className="flex border border-black pl-4 select-none cursor-pointer bg-gradient-to-r from-[#def6e2c0] to-[#f3fff4b8] text-[#002401] rounded-sm transition duration-500 ease-in-out hover:text-green-700 transform p-1">
-                          {product.attributes.shortName || product.attributes.NAME}
+                           {product.attributes.shortName || product.attributes.NAME}
                         </div>
                       </Link>
                     </li>

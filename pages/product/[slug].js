@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { fetcher } from '../../lib/api';
 
 const Product = ({ product }) => {
+    
     return (
         <Layout>
             <div className='bg-gray-200 mx-auto xs:w-1/2 lg:w-1/2 rounded-lg my-16 p-8'>
@@ -14,23 +15,29 @@ const Product = ({ product }) => {
                         </svg>
                     </Link>
                 </li>
+                <div className='max-w-xs mx-auto'>
                 <h1 className="text-4xl font-medium text-center">
                     {product.attributes.NAME}
-                </h1>
-                <p className='text-base text-center italic'>{product.attributes.scientificName}</p>
-                <div className='text-center'>
-                    <h4 className="font-medium p-2">Primary Function:</h4>
-                    <p className='text-lg'>{product.attributes.color}</p>
+                </h1>               
+                {product.attributes.primaryFunction &&
+                <div className='text-center pb-1 pt-10'>
+                <h4 className="text-lg font-semibold">Primary Function:</h4>
+                <p className='text-lg'>{product.attributes.primaryFunction}</p>
                 </div>
-                <div className='text-center'>
-                    <h4 className="font-medium p-2">Benefits:</h4>
+                } 
+             
+                {product.attributes.benefits && <div className='text-center'>
+                    <h4 className="text-lg font-semibold pt-3">Benefits:</h4>
                     <p className='text-lg'>{product.attributes.benefits}</p>
+                </div>}
+       
+                <div className='text-center pb-1 pt-3'>
+                    <h4 className="text-lg font-semibold">Specifications:</h4>
+                    <p className='text-lg'>{product.attributes.specification1}</p>
+                    <p className='text-lg'>{product.attributes.specification2}</p>
+                    <p className='text-lg'>{product.attributes.specification3}</p>
+                    <p className='text-lg'>{product.attributes.specification4}</p>
                 </div>
-                <div className='text-center'>
-                    <h4 className="font-medium p-2">Specifications:</h4>
-                    <p className='text-lg'>{product.attributes.ingredient1}</p>
-                    <p className='text-lg'>{product.attributes.ingredient2}</p>
-                    <p className='text-lg'>{product.attributes.appearance}</p>
                 </div>
 
                 <br />
@@ -44,26 +51,19 @@ const Product = ({ product }) => {
 }
 
 export async function getStaticPaths() {
-    // Call an external API endpoint to get posts
-    const res = await fetch(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/products/`
+    const pathResponse = await fetcher(
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}/products?pagination[pageSize]=400`
     )
-    const events = await res.json()
-    // Get the paths we want to pre-render based on posts
-    const paths = events.data.map((path) => ({
+    const paths = pathResponse.data.map((path) => ({
       params: { slug: `${path.attributes.slug}` },
     }))
-  
-    // We'll pre-render only these paths at build time.
-    // { fallback: false } means other routes should 404.
     return { paths, fallback: false }
   }
-
 
 export async function getStaticProps({ params }) {
     const { slug } = params;
     const productResponse = await fetcher(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/slugify/slugs/product/${slug}`
+        `${process.env.NEXT_PUBLIC_STRAPI_URL}/slugify/slugs/product/${slug}?pagination[pageSize]=400`
     )
     return {
         props: {

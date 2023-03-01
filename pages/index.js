@@ -26,6 +26,9 @@ const Home = ({hero, component}) => {
 export default Home;
 
 export async function getStaticProps(){
+/*   const featuredResponse = await fetcher(
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/featureds?populate=*`
+    ); */
   const heroResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/heroes?populate=*`
     );

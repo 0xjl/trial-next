@@ -27,12 +27,11 @@ const Hero = ({hero}) => {
       id="my-swiper">
       <SwiperSlide>
         <Image
-          unoptimized={true}
           width="0"
           height="0"
           sizes="100vh"
           style={{ width: '100%', height: '100vh' }}
-          src={`http://localhost:1337${hero.data[0].attributes.image.data.attributes.url}`}
+          src={'/slide-1.jpg'}
           alt='Image of two people sitting under a tree watching the sun set' 
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
@@ -68,37 +67,6 @@ const Hero = ({hero}) => {
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
           <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
             <h2 className="text-xl md:text-5xl">{hero.data[2].attributes.header}</h2>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          width="0"
-          height="0"
-          sizes="100vh"
-          style={{ width: '100%', height: '100vh' }}
-          src={'/slide-4.jpg'}
-          alt='Picture of Black Berries'
-        />
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-          <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
-            <h2 className="text-xl md:text-5xl">{hero.data[3].attributes.header}</h2>
-
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          width="0"
-          height="0"
-          sizes="100vh"
-          style={{ width: '100%', height: '100vh' }}
-          src={'/slide-2.jpg'}
-          alt='Picture of Black Berries'
-        />
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2]">
-          <div className="text-white fixed top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%]">
-            <h2 className="text-xl md:text-5xl">{hero.data[1].attributes.header}</h2>
           </div>
         </div>
       </SwiperSlide>
